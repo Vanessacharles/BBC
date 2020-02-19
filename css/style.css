@@ -1,0 +1,221 @@
+*{
+  box-sizing: border-box;
+}
+header{
+  width:100%;
+  /* border:1px solid; */
+  background-color:black;
+  height:50px;
+  clear:both;
+}
+header nav i{
+  color:white;
+}
+header li img{
+  height:20px;
+}
+header li span{
+  color:white;
+}
+header nav ul a{
+  text-decoration:none;
+  color:white;
+}
+header nav ul li{
+  float:left;
+  width:5%;
+  margin-right:20px;
+  text-decoration:none;
+  border-right:
+}
+/* nav ul li:nth-child(1){
+  color:black ;
+} */
+.hidden{
+  display:none;
+}
+.main{
+  height:500px;
+  background-color:grey;
+  clear:both;
+}
+.main h3:first-of-type{
+  float:left;
+  width:30%;
+  margin-left:30px;
+}
+.main h3:last-of-type{
+  float:right;
+  width:30%;
+  text-align:right;
+  margin-right:30px;
+
+}
+.trump{
+  width:45%;
+  height:400px;
+  /* border:1px solid black; */
+  background-image:url(trump.jpeg);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  float:left;
+  margin-left:40px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+   justify-content: flex-end;
+}
+.right{
+  /* border:1px solid black; */
+  width:48%;
+  height:400px;
+  float:right;
+  margin-right:40px;
+}
+.right span{
+  border-left:2px solid blue;
+}
+.right h4, .right span{
+  color:white;
+  margin-left:5px;
+  padding-left:5px;
+  /* display:flex;
+  flex-direction:column;
+  align-items:flex-end; */
+  position:relative;
+  top:77px;
+}
+.quart1{
+  background-image:url(trumptv.jpeg);
+  background-size:100% 100%;
+}
+.quart2{
+  background-image:url(rex.jpeg);
+  background-size:100% 100%;
+}
+.quart3{
+  background-image:url(ox.jpeg);
+  background-size:100% 100%;
+}
+.quart4{
+  background-image:url(office.jpeg);
+  background-size:100% 100%;
+}
+.quart1, .quart2, .quart3, .quart4{
+  width:45%;
+  height:190px;
+  float:left;
+  margin:7px;
+  /* border:1px solid black; */
+}
+h2{
+  margin:20px 0 0 30px;
+  font-size:30px;
+  border-left:5px solid red;
+  padding-left:5px;
+}
+.bottom{
+  height:200px;
+  border-bottom:5px solid black;
+  margin-top:10px;
+  padding-bottom:10px;
+
+}
+.bottom img{
+  height:200px;
+  width:30%;
+  float:left;
+  margin-right:20px;
+  /* margin-top:70px; */
+}
+.bottom img:first-of-type{
+  margin-left:45px;
+
+}
+@media screen and (max-width:1285px){
+  header form{
+    display:none;
+  }
+  header nav ul li{
+    width:15;
+  }
+  .main{
+    width:100%;
+  }
+  .trump{
+    width:90%;
+    /* height:auto; */
+    float:left;
+  }
+  .right{
+    width:90%;
+    height:auto;
+    margin-top:40px;
+
+  }
+  .quart1, .quart2, .quart3 , .quart4{
+    width:48%;
+    /* height:auto; */
+    float:left;
+  }
+  h2{
+    display:none;
+  }
+  .bottom{
+    width:90%;
+    /* height:auto; */
+    border:none;
+    float:left;
+  }
+  .bottom img{
+    width:27%;
+    float:left;
+    margin-left:20px;
+    /* height:auto; */
+  }
+}
+@media screen and (max-width:650px){
+  nav ul li{
+    display:none;
+  }
+  .hidden{
+    display:block;
+  }
+  nav ul li:nth-child(1){
+    display:block;
+  }
+  .trump{
+    /* height:auto; */
+  }
+  .main{
+    height:auto;
+  }
+  .right{
+    margin-bottom:70px;
+  }
+  .quart1, .quart2, .quart3 , .quart4{
+    background-image:none;
+    height:auto;
+    width:100%;
+    /* margin-bottom:100px; */
+  }
+  .qaurt1{
+    height:0;
+  }
+  .right h4, .right span{
+    color:black;
+    height:auto;
+    width:100%;
+    font-size:20px;
+  }
+  .bottom img{
+    height:auto;
+    width:80%;
+    margin:0 10px 10px 0;
+    padding:0;
+  }
+  .bottom img:first-of-type{
+    margin-left:0 ;
+  }
+}
